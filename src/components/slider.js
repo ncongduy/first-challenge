@@ -55,7 +55,7 @@ export default function MinimumDistanceSlider() {
 	};
 
 	return (
-		<Box sx={{ width: 800 }}>
+		<Box sx={{ width: 1000 }}>
 			<Slider
 				getAriaLabel={() => 'Minimum distance'}
 				min={0}

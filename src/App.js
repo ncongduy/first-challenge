@@ -1,19 +1,14 @@
 import './App.css';
+import Header from './components/header/header';
 import Button from '@mui/material/Button';
-import MinimumDistanceSlider from './components/slider';
+import WeekdayItem from './components/weekdayItem/weekdayItem';
 
 function App() {
 	return (
 		<div className='App'>
 			<div>
-				<h2>i'm weekly available at</h2>
-				<p>
-					Note: Currently availability sliders are disabled. Coming
-					soon!
-				</p>
-
-				<MinimumDistanceSlider />
-
+				<Header />
+				<WeekdayItem />
 				<Button
 					variant='contained'
 					onClick={() => {
