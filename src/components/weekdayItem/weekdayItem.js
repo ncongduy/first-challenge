@@ -33,7 +33,7 @@ export default function WeekdayItem({ day }) {
 					{day[0].toUpperCase() + day.slice(1)}
 				</label>
 			</div>
-			<MinimumDistanceSlider disableTime={isChecked(day)} />
+			<MinimumDistanceSlider disableTime={isChecked(day)} day={day} />
 		</div>
 	);
 }
