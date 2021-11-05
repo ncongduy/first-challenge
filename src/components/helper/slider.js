@@ -2,10 +2,6 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 
-function valuetext(value) {
-	return `${value}°C`;
-}
-
 const minDistance = 10;
 
 function createMarks() {
@@ -33,7 +29,7 @@ function createMarks() {
 	return marks;
 }
 
-export default function MinimumDistanceSlider() {
+export default function MinimumDistanceSlider({ disableTime }) {
 	const [value1, setValue1] = React.useState([100, 140]);
 
 	const handleChange1 = (event, newValue, activeThumb) => {
@@ -56,18 +52,30 @@ export default function MinimumDistanceSlider() {
 
 	return (
 		<Box sx={{ width: 1000 }}>
-			<Slider
-				getAriaLabel={() => 'Minimum distance'}
-				min={0}
-				max={170}
-				step={10}
-				value={value1}
-				onChange={handleChange1}
-				marks={createMarks()}
-				// valueLabelDisplay='auto'
-				getAriaValueText={valuetext}
-				disableSwap				
-			/>
+			{disableTime ? (
+				<Slider
+					getAriaLabel={() => 'Minimum distance'}
+					min={0}
+					max={170}
+					step={10}
+					value={value1}
+					onChange={handleChange1}
+					marks={createMarks()}
+					disableSwap
+				/>
+			) : (
+				<Slider
+					getAriaLabel={() => 'Minimum distance'}
+					min={0}
+					max={170}
+					step={10}
+					value={value1}
+					onChange={handleChange1}
+					marks={createMarks()}
+					disableSwap
+					disabled
+				/>
+			)}
 			<Box sx={{ m: 1 }} />
 		</Box>
 	);

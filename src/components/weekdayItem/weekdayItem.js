@@ -6,7 +6,6 @@ import './weekdayItem.css';
 export default function WeekdayItem({ day }) {
 	const { checkDay, setCheckDay } = useContext(AppContext);
 
-
 	function isChecked(day) {
 		return checkDay.includes(day);
 	}
@@ -34,7 +33,7 @@ export default function WeekdayItem({ day }) {
 					{day[0].toUpperCase() + day.slice(1)}
 				</label>
 			</div>
-			<MinimumDistanceSlider />
+			<MinimumDistanceSlider disableTime={isChecked(day)} />
 		</div>
 	);
 }
