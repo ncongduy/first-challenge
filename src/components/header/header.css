@@ -1,3 +1,8 @@
 h2 {
     text-transform: uppercase;
-  }
+    margin: 0.5rem 0;
+}
+
+p {
+  margin: 0.5rem 0 1rem 0;
+}

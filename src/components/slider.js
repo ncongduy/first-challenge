@@ -68,7 +68,7 @@ export default function MinimumDistanceSlider() {
 				getAriaValueText={valuetext}
 				disableSwap
 			/>
-			<Box sx={{ m: 3 }} />
+			<Box sx={{ m: 1 }} />
 		</Box>
 	);
 }

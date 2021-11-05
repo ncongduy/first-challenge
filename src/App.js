@@ -1,14 +1,14 @@
 import './App.css';
 import Header from './components/header/header';
 import Button from '@mui/material/Button';
-import WeekdayItem from './components/weekdayItem/weekdayItem';
+import WeekdayList from './components/weekdayList/weekdayList';
 
 function App() {
 	return (
 		<div className='App'>
 			<div>
 				<Header />
-				<WeekdayItem />
+        <WeekdayList />
 				<Button
 					variant='contained'
 					onClick={() => {
