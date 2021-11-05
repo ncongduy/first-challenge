@@ -1,14 +1,15 @@
-import React from 'react';
-import './weekdayList.css';
+import React, { useContext } from 'react';
 import WeekdayItem from '../weekdayItem/weekdayItem';
+import { AppContext } from '../../App';
+import './weekdayList.css';
 
 export default function WeekdayList() {
-	const daysOfWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+	const { daysOfWeek } = useContext(AppContext);
 
 	return (
 		<div>
 			{daysOfWeek.map((day) => (
-				<WeekdayItem day={day} />
+				<WeekdayItem day={day} key={day} />
 			))}
 		</div>
 	);

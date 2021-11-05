@@ -66,7 +66,7 @@ export default function MinimumDistanceSlider() {
 				marks={createMarks()}
 				// valueLabelDisplay='auto'
 				getAriaValueText={valuetext}
-				disableSwap
+				disableSwap				
 			/>
 			<Box sx={{ m: 1 }} />
 		</Box>
