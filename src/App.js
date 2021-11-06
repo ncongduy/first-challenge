@@ -35,7 +35,7 @@ function App() {
 
 	return (
 		<div className='App'>
-			<div>
+			<div className='container'>
 				<AppContext.Provider
 					value={{
 						daysOfWeek,

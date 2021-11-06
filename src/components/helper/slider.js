@@ -84,7 +84,7 @@ export default function MinimumDistanceSlider({ disableTime, day }) {
 	};
 
 	return (
-		<Box sx={{ width: 1000 }}>
+		<Box sx={{ width: '100%' }}>
 			{disableTime ? (
 				<Slider
 					getAriaLabel={() => 'Minimum distance'}
@@ -109,7 +109,7 @@ export default function MinimumDistanceSlider({ disableTime, day }) {
 					disabled
 				/>
 			)}
-			<Box sx={{ m: 1 }} />
+			{/* <Box sx={{ m: 1 }} /> */}
 		</Box>
 	);
 }

@@ -1,8 +1,17 @@
 .weekday {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
 }
   
 .weekday .containerCheckbox {
+  display: flex;
+  align-items: center;
   margin-right: 2rem;
-  width: 54px;
+}
+
+@media (max-width: 739px) {
+  .weekday .containerCheckbox {
+    margin-right: 0.8rem;
+  }
 }
