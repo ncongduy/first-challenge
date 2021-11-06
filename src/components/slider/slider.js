@@ -60,7 +60,6 @@ export default function MinimumDistanceSlider({ disableTime, day }) {
 	const [value, setValue] = React.useState([100, 140]);
 	const [time, setTime] = React.useState(convertValueToTime(value));
 
-
 	const handleChange = (event, newValue, activeThumb) => {
 		if (!Array.isArray(newValue)) {
 			return;

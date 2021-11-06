@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import MinimumDistanceSlider from '../helper/slider';
+import MinimumDistanceSlider from '../slider/slider';
 import { AppContext } from '../../App';
 import './weekdayItem.css';
 
